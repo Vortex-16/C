@@ -1,67 +1,74 @@
-# 👨🏼‍💻 **Learning C Code: A Coding Experience** 👨🏼‍💻
+# 👨🏼‍💻 Advanced C Programming: Format Specifiers & Execution Insights 
 
-## 📖 **Introduction**
-Today, I focused on the fundamentals of C programming. We dove into writing C code, with a specific emphasis on understanding and using format specifiers effectively.
-
----
-
-## 🎯 **Objectives**
-- ✅ Learn the basics of writing C code
-- ✅ Understand the importance and usage of format specifiers
+## 📖 Introduction
+This repository focuses on deepening the understanding of **advanced concepts in C programming**, especially mastering **format specifiers** for precise control over input and output operations. Whether you're fine-tuning your debugging output or building console applications, mastering format specifiers is crucial.
 
 ---
 
-## 📌 **Topics Covered**
-- 🔹 Execution Of A Program
-- 🔹 Prototype of `printf`
-- 🔹 Printing Different Data Types
-- 🔹 Precision Control
-- 🔹 Length Control
+## 🎯 Objectives
+- ✅ Strengthen C programming fundamentals with real-world examples  
+- ✅ Dive deeper into format specifiers, precision, and memory representation  
+- ✅ Explore nuances of data representation across architectures  
 
 ---
 
-## 📝 **Basics of Writing C Code**
-- 🏁 Introduction to C programming language
-- ⚙️ Setting up the C environment
-- 📜 Writing and executing a simple C program
-- 🏗 Understanding the structure of a C program
+## 📌 Topics Covered
+- 🔹 How C Programs Execute (from source to binary)  
+- 🔹 Prototype and Internals of `printf` and `scanf`  
+- 🔹 Printing and Formatting: Int, Float, Char, Hex, Octal, Unsigned  
+- 🔹 Controlling Precision with `%.nf`  
+- 🔹 Handling Data Sizes with Length Modifiers (`%ld`, `%lld`, etc.)
 
 ---
 
-## 🔢 **Format Specifiers**
-Format specifiers are used in C programming to control the input and output format. They are essential for formatting data in `printf` and `scanf` functions. Today, we covered the following format specifiers:
+## 🧠 Advanced Notes on Format Specifiers
 
-| Format Specifier | Description |
-|-----------------|-------------|
-| `%d` | Integer (int) |
-| `%f` | Floating-point number |
-| `%c` | Character |
-| `%s` | String |
-| `%x` | Hexadecimal representation |
-| `%o` | Octal representation |
-| `%lf` | Double |
-| `%%` | Percent symbol (%) |
-| `%u` | Unsigned decimal integer (unsigned int) |
+Format specifiers in C let you control **how data is displayed or read** in the `printf` and `scanf` family of functions. They're a bridge between **raw binary data and human-readable output**.
+
+| Specifier | Meaning | Example |
+|-----------|---------|---------|
+| `%d` | Signed int | `-42` |
+| `%u` | Unsigned int | `42` |
+| `%f` | Float (6 decimal by default) | `3.141593` |
+| `%.2f` | Float with 2 decimal precision | `3.14` |
+| `%c` | Character | `'A'` |
+| `%s` | String | `"Hello"` |
+| `%x` | Hexadecimal | `2a` |
+| `%o` | Octal | `052` |
+| `%lf` | Double | `3.1415926535` |
+| `%lld` | Long Long int | `9223372036854775807` |
+| `%%` | Prints `%` | `%` |
 
 ---
 
-## 💻 **Example Code**
-Here’s an example of how to use format specifiers in a C program:
+## 💻 Example: Format Specifiers in Action
 
 ```c
 #include <stdio.h>
 
-int main()
-{
-    char c = 'a';
-    int x = -1;
-    float f = 7.9;
-    double d = 777.898989;
-    printf("Formatted output: %c %d %u %o %x %f %lf\n", c, x, x, x, x, f, d);
+int main() {
+    char ch = 'A';
+    int i = -42;
+    unsigned int u = 42;
+    float f = 3.14159f;
+    double d = 2.7182818284;
+
+    printf("Character        : %c\n", ch);
+    printf("Signed Integer   : %d\n", i);
+    printf("Unsigned Integer : %u\n", u);
+    printf("Hexadecimal      : %x\n", u);
+    printf("Octal            : %o\n", u);
+    printf("Float            : %f\n", f);
+    printf("Float (2 dp)     : %.2f\n", f);
+    printf("Double           : %lf\n", d);
+    printf("Percent Symbol   : %%\n");
+
     return 0;
 }
 ```
 
----
+🧑‍💻 Author
+Vikash Gupta
+Learning C by building, debugging, and sharing.
+📫 GitHub: @vikashgupta16
 
-🚀 *This guide enhances the learning experience for C programming with structured insights and examples!*
