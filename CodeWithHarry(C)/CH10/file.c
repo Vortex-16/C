@@ -6,4 +6,5 @@ void main() {
     char c;
     fscanf(ptr, "%c", &c);
     printf("The character is %c\n", c);
+    fclose(ptr);
 }
