@@ -136,6 +136,7 @@ Enter the range: 5
 Enter the array elements
 1 2 3 4 5
 The array is:
+
 1 2 3 4 5
 ----------------------------
 Perform any of them:
