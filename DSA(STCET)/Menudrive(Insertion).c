@@ -1,3 +1,5 @@
+// Write a menu-driven program to insert an element in an array at the first, last, or any position.
+
 #include <stdio.h>
 
 void first(int n, int item, int a[]) {
