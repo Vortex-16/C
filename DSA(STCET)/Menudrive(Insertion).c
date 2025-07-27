@@ -129,3 +129,26 @@ Enter a number to insert at last position:
 The updated array is:
 1 2 3 4 5 6
 */
+
+/*
+Output:
+Enter the range: 5
+Enter the array elements
+1 2 3 4 5
+The array is:
+1 2 3 4 5
+----------------------------
+Perform any of them:
+Enter 1 For: Insertion at first index.
+Enter 2 For: Insertion at last index.
+Enter 3 For: Insertion at any index.
+Enter your choice:
+3
+Enter a number to insert at any position:
+7
+Enter the position after which you want to insert:
+2
+The updated array is:
+1 2 7 3 4 5
+*/
+// End of code
