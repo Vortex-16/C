@@ -70,5 +70,4 @@ int main() {
 🧑‍💻 Author
 Vikash Gupta
 Learning C by building, debugging, and sharing.
-📫 GitHub: @vikashgupta16
-
+📫 GitHub: @Vortex-16
