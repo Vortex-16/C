@@ -37,7 +37,7 @@ struct termios orig_termios;
 
 void resetTerminal() {
     tcsetattr(STDIN_FILENO, TCSANOW, &orig_termios);
-    printf("\033[?25h"); // Show cursor
+    printf("\033[?25h"); // SC
 }
 
 void setRawMode() {
@@ -47,7 +47,7 @@ void setRawMode() {
     t = orig_termios;
     t.c_lflag &= ~(ICANON | ECHO);
     tcsetattr(STDIN_FILENO, TCSANOW, &t);
-    printf("\033[?25l"); // Hide cursor
+    printf("\033[?25l"); // HC
 }
 
 int kbhit() {
