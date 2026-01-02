@@ -24,8 +24,12 @@ int main() {
 	}
 	printf("Enter Position and Value to be inserted: ");
 	scanf("%d %d", &p, &value);
-	insert(arr, &size, p, value);
-	printf("Array after insertion: ");
-	display(arr, size);
+	if (p >= 0 && p <= size) {
+		insert(arr, &size, p, value);
+		printf("Array after insertion: ");
+		display(arr, size);
+	} else {
+		printf("Insertion failed: Invalid position.\n");
+	}
 	return 0;
 }
