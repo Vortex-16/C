@@ -1,0 +1,20 @@
+ADTs:
+Set of Values+Set of Operations;
+Like: Total Size,Used Size, Base Address & imax() + get(i) + set(i,num)
+Loading Of Program in Main Memory
+
+
+
+|		|
+|		| Heap
+|		|
+|Array/Pointer	| Stack
+|USI		|
+|Code  Segment	|
+
+
+ptr (int*) mallloc(n*sizeOf(int))
+
+Stack&Heap
+
+
