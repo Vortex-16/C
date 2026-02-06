@@ -1,0 +1,5 @@
+Roll | Name                | Department          | CGPA
+------------------------------------------------------------
+1    | MD Shoaib Akhtar    | CSE                | 7.45
+23   | Vikash Gupta        | CSE                | 7.20
+37   | Rouvik Majhi        | CSE                | 8.97
